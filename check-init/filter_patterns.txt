@@ -1,0 +1,4 @@
+# Ignore: 'cmp $0xSYM_ADDR,%r??'.
+# The symbol's address can be used by an address range comparison function,
+# which is a valid use case regardless of a section type.
+cmp[bdlq]?[[:blank:]]+\$0x
